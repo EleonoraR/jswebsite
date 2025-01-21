@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript: The Language of the Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .section {
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        #feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        #feature-list li {
+            margin-bottom: 10px;
+        }
+        #feature-list li:before {
+            content: "✓ ";
+            color: #27ae60;
+        }
+        #code-example {
+            background-color: #34495e;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        #try-it {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript: The Language of the Web</h1>
+    
+    <div class="section">
+        <h2>What is JavaScript?</h2>
+        <p>JavaScript is a versatile, high-level programming language primarily used for creating interactive web pages. It's an essential part of web development, alongside HTML and CSS.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Key Features</h2>
+        <ul id="feature-list">
+            <li>Client-side scripting</li>
+            <li>Dynamic content updating</li>
+            <li>Control multimedia</li>
+            <li>Animate images</li>
+            <li>Server-side development (Node.js)</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Code Example</h2>
+        <div id="code-example">
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+console.log(greet("World"));
+        </div>
+    </div>
+    
+    <div id="try-it">
+        <button onclick="showMessage()">Try JavaScript!</button>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            let name = prompt("What's your name?");
+            if (name) {
+                document.getElementById("output").textContent = `Hello, ${name}! Welcome to the world of JavaScript.`;
+            }
+        }
+    </script>
+</body>
+</html>
